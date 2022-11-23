@@ -11,7 +11,6 @@ public class VendingMachine {
     }
 
     public VendingMachine() {
-
         this(initProduct);
     }
 
