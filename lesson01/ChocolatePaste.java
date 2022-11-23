@@ -1,7 +1,7 @@
 package lesson01;
 
 public class ChocolatePaste extends Chocolate {
-    private Double weight = 0.0;
+    private Double weight = 0.0;                // вес нетто в граммах
 
     public ChocolatePaste(String name, Double price, Double calories, String color, Double weight){
         super(name,price,calories,color);

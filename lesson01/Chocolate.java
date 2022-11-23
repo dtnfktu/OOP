@@ -1,13 +1,10 @@
 package lesson01;
 
 public class Chocolate extends Product {
-    private Double calories = 0.0;
-    private String color = "black";
+    private Double calories = 0.0;      // калории
+    private String color = "black";     // цвет или, скорее, тип шоколада - черный, молочный, с орехом...
 
-    public Chocolate(String name) {
-        super(name);
-    }
-
+    // конструктор с учётом новых свойств
     public Chocolate(String name, Double price, Double calories, String color){
         super(name, price);
         this.calories = calories;
@@ -22,6 +19,7 @@ public class Chocolate extends Product {
         return color;
     }
     
+    // переопределение метода
     @Override
     public String toString() {
         return String.format("%s %,.2f %.2f %s", this.getName(), this.getPrice(), getCalories(),getColor());
